@@ -1,0 +1,24 @@
+{
+  "name": "aigate",
+  "version": "0.1.0",
+  "description": "Pre-push validation gate CLI for AI-generated code (typecheck/build gate)",
+  "bin": {
+    "aigate": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0"
+  }
+}
